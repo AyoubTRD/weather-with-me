@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://kit.fontawesome.com/5703cdfb30.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="display mx-auto mt-5 mb-2">
+
+      <form class="mx-auto">
+        <h1 class="display-4 text-muted">Weather App</h1>
+        <p class="location">Enter your location</p>
+        <input type="text" name="location" class="mb-3 py-2">
+        <p class="text-danger error d-none">Cannot Find Location</p>
+      </form>
+
+      <div class="display-weather mx-auto d-none">
+        <div class="card">
+          <img class="card-img-top condition-image" src="https://via.placeholder.com/300/771796" alt="Card image cap">
+          <div class="card-body">
+            <h3 class="text-center mb-4 city-name text-muted">City name</h5>
+              <p class="state lead">cloudy</p>
+              <h5 class="display-4 text-center"><span class="temp">15.0</span> °C</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/weather.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
