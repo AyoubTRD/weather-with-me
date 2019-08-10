@@ -1,4 +1,4 @@
-const key = "VLyDWBKgnubu1AGvHfklxiPGXI6HU39S";
+const key = "4TUGeYZA0UKEvphoXVIVA4ohlfwXmuBO";
 let conditions = {};
 
 const getCity = async city => {
@@ -13,7 +13,7 @@ const getCity = async city => {
 };
 
 const getConditions = async (cityKey, cityName) => {
-  const base = `http://dataservice.accuweather.com/currentconditions/v1/${cityKey}?apikey=xKVJJ9tcAa85qmALGp6sLFyKtUb2GGfA`;
+  const base = `http://dataservice.accuweather.com/currentconditions/v1/${cityKey}?apikey=${key}`;
   const cityFetch = await fetch(base);
   const cityData = await cityFetch.json();
   const temp = cityData[0].Temperature.Metric.Value;
